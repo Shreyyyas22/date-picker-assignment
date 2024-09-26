@@ -1,9 +1,22 @@
+import DatePicker from "../components/DatePicker.js";
+import { Box } from '@mui/material'
 
-export default function Home() {
+const HomePage = () => {
     return (
-        <div className="container mx-auto">
-            <h2 className="text-3xl font-bold mb-4">Welcome to My Next.js App</h2>
-            Get started
+        <Box sx={{ display: "flex",
+            justifyContent: "center",
+            alignItems: 'center',
+            height: "100vh",
+        }}
+        >
+        
+        <div>
+            <h1 className="text-center text-lg">Date Picker Assignment</h1>
+            <DatePicker />
         </div>
+        
+        </Box>
     )
 }
+
+export default HomePage;
